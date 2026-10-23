@@ -339,3 +339,13 @@ full_component = f"""
 """
 
 components.html(full_component, height=800, scrolling=True)
+
+# ===========================================================================
+# ANALÍTICA CON UMAMI (Estadísticas de visitas por región/ciudad)
+# ===========================================================================
+UMAMI_ID = "f9fb4674-7907-4c00-aaff-02ee12cb21b6"
+
+umami_code = f"""
+<script async src="https://cloud.umami.is/script.js" data-website-id="{UMAMI_ID}"></script>
+"""
+components.html(umami_code, height=0, width=0)
